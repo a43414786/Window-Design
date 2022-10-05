@@ -115,7 +115,6 @@ namespace Practice3_2
         {
             buttonPress(2);
             refresh();
-            setButtonText("選取");
 
         }
 
