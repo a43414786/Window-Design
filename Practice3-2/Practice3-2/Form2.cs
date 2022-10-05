@@ -39,12 +39,14 @@ namespace Practice3_2
                 setButtonText("放置");
                 isTake = !isTake;
                 selectedStack = stackIdx;
+                textBox5.Text = "你選了堆疊" + (stackIdx + 1);
             }
             else
             {
                 setButtonText("選取");
                 isTake = !isTake;
                 game.move(selectedStack, stackIdx);
+                textBox5.Text = "...";
             }
         }
         private void refresh()
@@ -77,6 +79,7 @@ namespace Practice3_2
             }
             if (game.win())
             {
+                textBox5.Text = "你贏了";
                 setButtonText("贏");
                 enabledAll(false);
             }
@@ -85,6 +88,7 @@ namespace Practice3_2
         {
             game = form1.game;
             setButtonText("選取");
+            textBox5.Text = "...";
             enabledAll(true);
             refresh();
         }
