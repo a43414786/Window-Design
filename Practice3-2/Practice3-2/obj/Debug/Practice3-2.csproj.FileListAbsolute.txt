@@ -9,3 +9,14 @@ C:\Users\a4341\source\repos\Practice3-2\Practice3-2\obj\Debug\Practice3-2.csproj
 C:\Users\a4341\source\repos\Practice3-2\Practice3-2\obj\Debug\Practice3-2.csproj.CoreCompileInputs.cache
 C:\Users\a4341\source\repos\Practice3-2\Practice3-2\obj\Debug\Practice3-2.exe
 C:\Users\a4341\source\repos\Practice3-2\Practice3-2\obj\Debug\Practice3-2.pdb
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\bin\Debug\Practice3-2.exe.config
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\bin\Debug\Practice3-2.exe
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\bin\Debug\Practice3-2.pdb
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\obj\Debug\Practice3-2.csprojAssemblyReference.cache
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\obj\Debug\Practice3_2.Form1.resources
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\obj\Debug\Practice3_2.Form2.resources
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\obj\Debug\Practice3_2.Properties.Resources.resources
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\obj\Debug\Practice3-2.csproj.GenerateResource.cache
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\obj\Debug\Practice3-2.csproj.CoreCompileInputs.cache
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\obj\Debug\Practice3-2.exe
+D:\Desktop\Window-Design\Practice3-2\Practice3-2\obj\Debug\Practice3-2.pdb
