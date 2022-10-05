@@ -34,7 +34,9 @@ namespace Practice3_2
                     try
                     {
                         stack[counter++] = int.Parse(s[i].ToString());
+                        if(stack[counter - 1] != 1 && stack[counter - 1] != 2 && stack[counter - 1] != 3) return null;
                         if (counter == 5) return null;
+                        
                     }
                     catch
                     {
@@ -53,9 +55,31 @@ namespace Practice3_2
             stack[4] = counter;
             return stack;
         }
-        private void init()
+        private void calculateSum(int[] intStack1,int[] sum)
+        {
+            for (int i = 0; i < intStack1[4]; i++)
+            {
+                switch (intStack1[i])
+                {
+                    case 1:
+                        sum[0]++;
+                        break;
+                    case 2:
+                        sum[1]++;
+                        break;
+                    case 3:
+                        sum[2]++;
+                        break;
+                }
+            }
+        }
+        public void init()
         {
             message.Text = "請輸入測資";
+            stackBox1.Text = "";
+            stackBox2.Text = "";
+            stackBox3.Text = "";
+            stackBox4.Text = "";
         }
         public Form1()
         {
@@ -92,6 +116,16 @@ namespace Practice3_2
             }
             else
             {
+                int[] sum = {0,0,0};
+                calculateSum(intStack1, sum);
+                calculateSum(intStack2, sum);
+                calculateSum(intStack3, sum);
+                calculateSum(intStack4, sum);
+                if(sum[0] != 3 || sum[1] != 3 || sum[2] != 3)
+                {
+                    message.Text = "測資錯誤";
+                    return;
+                }
                 game = new Game(intStack1, intStack2, intStack3, intStack4);
                 form2.Init();
                 this.Hide();

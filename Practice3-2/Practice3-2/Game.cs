@@ -12,23 +12,52 @@ namespace Practice3_2
 
         public bool canplace(int i)
         {
-            return false;
+            if (stacks[i].Count == 4) return false;
+            else return true;
         }
         public bool cantake(int i)
         {
-            return false;
+            if (stacks[i].Count == 0) return false;
+            else return true;
         }
         public void move(int i, int j)
         {
-
+            int iSize = stacks[i].Count;
+            stacks[j].Add(stacks[i][iSize - 1]);
+            stacks[i].RemoveAt(iSize - 1);
         }
-        public string output(int i)
+        public string[] output(int idx)
         {
-            return null;
+            List<int> stack = stacks[idx];
+            int length = 21, counter = 0;
+            int num = length - stack.Count;
+            string[] strArr = new string[length];
+            for (int i = 0; i < num; i++)
+            {
+                strArr[i] = "";
+            }
+            for (int i = length - 1; i >= num; i--)
+            {
+                strArr[i] = stack[counter++].ToString();
+            }
+            return strArr;
         }
         public bool win()
         {
-            return false;
+            for(int i = 0; i < 4; i++)
+            {
+                int[] temp = {0,0,0};
+                if(stacks[i].Count > 3)
+                {
+                    return false;
+                }
+                for(int j = 0; j < stacks[i].Count; j++)
+                {
+                    temp[j] = stacks[i][j];
+                }
+                if (temp[0] != temp[1] || temp[1] != temp[2]) return false;
+            }
+            return true;
         }
         public Game(int[] stack1, int[] stack2, int[] stack3, int[] stack4) {
             stacks = new List<int>[4];
@@ -52,10 +81,6 @@ namespace Practice3_2
             {
                 stacks[3].Add(stack4[i]);
             }
-        }
-        public List<int>[] getStacks()
-        {
-            return stacks;
         }
     }
 }
